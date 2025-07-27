@@ -1,0 +1,103 @@
+.pitch-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-image: url(../img/pitch/pitch-purple.png),
+    url(../img/pitch/pitch-yellow.png), url(../img/pitch/pitch-blue.png),
+    url(../img/pitch/pitch-orange.png), url(../img/pitch/pitch-green.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 203px right 10px, top 374px left 10px,
+    bottom 426px right 10px, bottom 249px left 10px, bottom 68px right 10px;
+  background-size: auto, auto, auto, auto, auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 109px;
+    background-image: none;
+    max-width: 1440px;
+  }
+}
+
+.pitch-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000;
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
+
+  @include media(desktop) {
+    font-weight: 600;
+    font-size: 36px;
+    max-width: max-content;
+  }
+}
+
+.pitch-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 87px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.pitch-list-item {
+  margin-bottom: 42px;
+
+  &:nth-child(4) {
+    margin-bottom: 47px;
+  }
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+}
+
+.pitch-img-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 99px;
+  }
+}
+
+.pitch-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #b6574d;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 17px 39px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    background: #0b7b3c;
+    padding: 19px 26px;
+    border: none;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,73 @@
+.hero-section {
+  background: #fff;
+  padding-top: 162px;
+  padding-bottom: 72px;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom 80px center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 237px;
+    padding-bottom: 203px;
+    background-image: url(../img/hero/hero-bg-desk.png);
+    background-position: bottom 0 center;
+  }
+}
+
+.hero-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.08em;
+  text-transform: capitalize;
+  color: #361b14;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 48px;
+    max-width: 624px;
+  }
+}
+
+.hero-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  color: #361b14;
+  margin-bottom: 296px;
+
+  @include media(desktop) {
+    font-size: 26px;
+    line-height: 1.38462;
+    margin-bottom: 58px;
+    max-width: 624px;
+  }
+}
+
+.hero-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #0b7b3c;
+  border-radius: 12px;
+  padding: 19px 39px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}

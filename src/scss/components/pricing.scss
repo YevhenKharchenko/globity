@@ -1,0 +1,247 @@
+.pricing-section {
+  background: #fffaf5;
+  scroll-margin-top: 70px;
+
+  @include media(desktop) {
+    scroll-margin-top: 105px;
+  }
+}
+
+.pricing-section-wrapper {
+  padding-top: 56px;
+  padding-bottom: 89px;
+  background-image: url(../img/pricing/pricing-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top 10px center;
+  background-size: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 88px;
+    max-width: 1440px;
+    background-image: url(../img/pricing/pricing-bg-desk.png);
+    background-position: top 24px center;
+  }
+}
+
+.pricing-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000;
+  margin-bottom: 134px;
+
+  @include media(desktop) {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 100px;
+  }
+}
+
+.pricing-content-wrapper {
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.pricing-swiper-container {
+  max-width: 343px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.pricing-swiper-container.show {
+  visibility: visible;
+}
+
+.pricing-slide {
+  max-width: 343px;
+
+  @include media(desktop) {
+    max-width: 484px;
+  }
+}
+
+.pricing-price-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 265.5px;
+  }
+}
+
+.pricing-price {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 0.95238;
+  color: #000;
+}
+
+.pricing-month {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  color: #000;
+}
+
+.pricing-slide-table {
+  border: 1px solid #0b7b3c;
+  box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pricing-slide-header-row {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-slide-header-column {
+  max-width: 171.5px;
+  width: 100%;
+  padding: 22px 14px;
+  text-align: center;
+  background: #a0cfa0;
+
+  @include media(desktop) {
+    max-width: 265.5px;
+  }
+}
+
+.pricing-header-first-column {
+  text-align: left;
+}
+
+.pricing-slide-header-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #000;
+}
+
+.pricing-slide-table-row {
+  display: flex;
+  border-bottom: 1px solid #a0cfa0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pricing-slide-column {
+  max-width: 171.5px;
+  width: 100%;
+  min-height: 56px;
+  padding: 20px 12px;
+  text-align: center;
+  background: #fff;
+
+  @include media(desktop) {
+    max-width: 265.5px;
+  }
+}
+
+.pricing-first-column {
+  text-align: left;
+}
+
+.checkmark-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-slide-title {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #0e5b2f;
+}
+
+.pricing-slide-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: center;
+  color: #000;
+}
+
+.pricing-dot {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b6574d;
+  cursor: pointer;
+}
+
+.pricing-dot.active {
+  background-color: #0b7b3c;
+}
+
+.pricing-btn {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #0b7b3c;
+  border-radius: 12px;
+  padding: 19px 39px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 42px;
+  }
+}
+
+.pricing-content-wrapper-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    max-width: 1062px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pricing-price-raw-wrapper-desk {
+  @include media(desktop) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}

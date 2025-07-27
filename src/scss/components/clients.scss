@@ -1,0 +1,98 @@
+.clients-section {
+  padding-top: 56px;
+  padding-bottom: 322px;
+  background-image: url(../img/clients/clients-big-circle.png),
+    url(../img/clients/clients-medium-circle.png),
+    url(../img/clients/clients-small-circle.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom 63px right 29px, bottom 219px left 116px,
+    bottom 121px left 106px;
+  background-size: auto, auto, auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 150px;
+    background-image: url(../img/clients/clients-big-circle.png),
+      url(../img/clients/clients-medium-circle.png),
+      url(../img/clients/clients-small-circle.png),
+      url(../img/clients/clients-top-figure.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: bottom 11px right 19px, bottom 54px left 80px,
+      bottom 44px left 189px, top 0 right 0;
+    background-size: auto, auto, auto, auto;
+    max-width: 1440px;
+  }
+}
+
+.clients-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  color: #000;
+  margin-bottom: 56px;
+
+  @include media(desktop) {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 61px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 32px;
+  }
+}
+
+.clients-list-item {
+  box-shadow: 6px 6px 6px 0 rgba(77, 155, 111, 0.3);
+  border-radius: 12px;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 405px;
+  }
+}
+
+.clients-item-top-wrapper {
+  box-shadow: 0 4px 4px 0 #ffe1c9;
+  background: #4d9b6f;
+  border-radius: 12px 12px 0 0;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clients-item-profession {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #000;
+}
+
+.clients-item-bottom-wrapper {
+  background: #fff;
+  border-radius: 0 0 12px 12px;
+  padding: 32px 23px;
+}
+
+.clients-item-text {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000;
+}
