@@ -1,6 +1,7 @@
 const contextMenu = document.querySelector('.context-menu');
 const menuBtn = document.querySelector('.nav-btn');
 const closeContextBtn = document.querySelector('.close-btn');
+const navigation = document.querySelector('.nav');
 
 menuBtn.addEventListener('click', onMenuButtonClick);
 
@@ -13,6 +14,7 @@ function onMenuButtonClick() {
   contextMenu.classList.add('is-open');
   menuBtn.classList.add('closed');
   closeContextBtn.classList.add('is-open');
+  navigation.classList.add('menu-open-border');
 
   contextMenu.addEventListener('click', onContextMenuLinkClick);
   closeContextBtn.addEventListener('click', onCloseContextButtonClick);
@@ -24,6 +26,7 @@ function onCloseContextButtonClick() {
   contextMenu.classList.remove('is-open');
   closeContextBtn.classList.remove('is-open');
   menuBtn.classList.remove('closed');
+  navigation.classList.remove('menu-open-border');
 
   contextMenu.removeEventListener('click', onContextMenuLinkClick);
   closeContextBtn.removeEventListener('click', onCloseContextButtonClick);
