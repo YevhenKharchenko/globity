@@ -1,0 +1,37 @@
+.about-section {
+  padding-bottom: 55px;
+
+  @include media(desktop) {
+    padding-bottom: 134px;
+  }
+}
+
+.about-container {
+  @include media(desktop) {
+    padding: 0 129px;
+  }
+}
+
+.about-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fafafb;
+
+  @include media(desktop) {
+    font-size: 24px;
+    max-width: 649px;
+  }
+}
