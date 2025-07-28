@@ -1,0 +1,152 @@
+.faq-section {
+  padding-bottom: 64px;
+
+  @include media(desktop) {
+    padding-bottom: 127px;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    max-width: 1142px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.faq-list-item {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-item-top-wrapper {
+  background: #151521;
+  padding: 3px 24px;
+  border-radius: 30px;
+
+  @include media(desktop) {
+    padding: 30px 44px 28px 75px;
+  }
+}
+
+.faq-item-bottom-wrapper {
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+
+  @include media(desktop) {
+    gap: 25px;
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 24px;
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+    min-width: 64px;
+  }
+}
+
+.faq-icon {
+  @include media(desktop) {
+    width: 64px;
+    height: 32px;
+  }
+}
+
+.faq-btn-number {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.faq-btn-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  line-height: 1.5;
+  color: #fff;
+  width: 100%;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    font-size: 21px;
+  }
+}
+
+.is-visible {
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+    max-height: 100px;
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open {
+  background: #0b0b17;
+}
+
+.faq-list-item.faq-open .faq-item-top-wrapper {
+}
+
+.faq-list-item.faq-open .faq-item-bottom-wrapper {
+  padding: 20px 12px;
+
+  @include media(desktop) {
+    padding: 13px 39px 20px 39px;
+  }
+}
+
+.faq-list-item.faq-open .faq-btn-text {
+}
+
+.faq-list-item.faq-open .faq-icon {
+}

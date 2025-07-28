@@ -1,0 +1,59 @@
+.contact-section {
+  background: #151521;
+  padding-top: 5px;
+  padding-bottom: 19px;
+
+  @include media(desktop) {
+    padding-top: 11px;
+    padding-bottom: 33px;
+  }
+}
+
+.contact-container {
+}
+
+.contact-title {
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #fafafb;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+
+.contact-email-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
+.contact-bottom-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 22px;
+  }
+}

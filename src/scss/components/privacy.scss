@@ -1,67 +1,67 @@
 .privacy-body {
-  background: #fffbe9;
+  background: #1c1c28;
 }
 
 .policy-section {
-  padding-top: 118px;
-  padding-bottom: 72px;
+  padding-top: 86px;
+  padding-bottom: 50px;
 
   @include media(desktop) {
-    padding-top: 142px;
-    padding-bottom: 92px;
+    padding-top: 146px;
+    padding-bottom: 70px;
   }
 }
 
 .policy-main-title {
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 19px;
+  color: #fafafb;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 24px;
-    margin-bottom: 54px;
+    font-size: 34px;
+    margin-bottom: 40px;
   }
 }
 
 .policy-title {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fafafb;
   margin-bottom: 18px;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
 .policy-subtitle {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   font-size: 14px;
-  color: #000;
+  color: #fafafb;
   margin-bottom: 18px;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
 .policy-text {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  color: #000;
+  font-size: 14px;
+  color: #fafafb;
 
   &:not(:last-child) {
     margin-bottom: 18px;
   }
 
   @include media(desktop) {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
@@ -71,10 +71,10 @@
 }
 
 .policy-item {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  color: #000;
+  font-size: 14px;
+  color: #fafafb;
   margin-bottom: 8px;
 
   &:last-child {
@@ -82,7 +82,7 @@
   }
 
   @include media(desktop) {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
